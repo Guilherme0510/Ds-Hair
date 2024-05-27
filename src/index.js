@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './app1.jsx';
+import { getCLS, getFID, getFCP, getLCP, getTTFB } from 'web-vitals'; // Importa las funciones de métricas individuales
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render( <>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+getCLS(console.log);
+getFID(console.log);
+getFCP(console.log);
+getLCP(console.log);
+getTTFB(console.log);

@@ -1,0 +1,22 @@
+import React from "react";
+import './map.css';
+
+function Map() {
+  return (
+    <section class="map-container">
+      <div class="loca row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.400624800324!2d-46.59857781909013!3d-23.44600930288602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef69d78bdb617%3A0xd8cb4733cd6e2a38!2sDs%20Hair%20-%20Espa%C3%A7o%20mulher!5e0!3m2!1spt-BR!2sbr!4v1714674300982!5m2!1spt-BR!2sbr" title="Mapa"
+          width="100%" height="450" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+        <div class="text-map">
+          <h3 className="color-gray">Rua Visconde de Antunes Braga, 43 - Vila Dorna, São Paulo - SP</h3>
+          <br />
+          <h3 className="color-gray">Segunda a Sábado 07h00 - 20h00</h3>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Map;

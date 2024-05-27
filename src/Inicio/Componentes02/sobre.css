@@ -1,0 +1,104 @@
+.bg-sobre {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../public/img/img-bg-sobre.png);;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-sobre h1{
+    padding: 80px 0;
+    color: #fff;
+}
+
+
+.dados-sobre {
+    display: flex;
+    align-items: center;
+}
+
+.img-sobre {
+    flex: 1;
+    position: relative;
+}
+
+.img-sobre1 {
+    width: 450px;
+    border-radius: 20px;
+}
+
+.img-sobre2 {
+    position: absolute;
+    bottom: -150px;
+    right: 0px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.text-sobre {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-sobre P{
+    color: #464444;
+}
+
+@media screen and (max-width: 728px) {
+    .text-sobre {
+        padding-top: 170px;
+    }
+}
+
+.valores {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+}
+
+.box-valores {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px double #652C53;
+    padding: 20px;
+    transition: .8s;
+
+}
+
+.box-valores p{
+    color: #464444;
+
+}
+
+.box-valores:hover{
+    background-color: #f3daf3;
+    transition: .8s;
+}
+
+@media screen and (max-width: 728px) {
+
+    .valores{
+        padding-top: 50px;
+    }
+    .box-valores {
+        width: 250px;
+        height: 450px;
+        margin-top: 20px;
+    }
+}
+
+.box-valores i{    
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #C8A2C8;
+    padding: 25px;
+    transition: 1.8s ease;
+    margin: 10px;
+}
+
+.box-valores i:hover{
+    transform: rotate(360deg);
+    font-size: 35px;
+}

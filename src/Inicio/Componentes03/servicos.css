@@ -1,0 +1,79 @@
+.sc-text p{
+    color: #464444;
+}
+.bg-serv {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../public/img/img-bg-serv.png);;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-serv h1{
+    padding: 80px 0;
+    color: #fff;
+}
+
+.serv-head p{
+    text-align: center;
+    font-weight: 100;
+}
+
+.serv-types .serv-type-item,
+.serv-types .serv-type-item-left{
+    margin: 40px 0;
+    width: 100%;
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.serv-type-img{
+    width: 450px;
+}
+
+.serv-types .serv-type-item img{
+    margin-left: 50px;
+    width: auto;
+    height: 450px;
+}
+
+@media screen and (max-width:728px){
+    .serv-types .serv-type-item img{
+        object-fit: contain;
+        margin-left: 50px;
+        width: 200px;
+        height: 450px;
+    }
+}
+.serv-types .serv-type-text{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+}
+
+ .serv-type-item-left img{
+    width: auto;
+    height: 450px;
+}
+
+.btn-serv-mais{
+    margin-top: 50px;
+    padding: 10px 25px;
+    background-color: #652C53;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;    transition: all .5s ease;
+}
+
+.btn-serv-mais:hover{
+    background-color: #aa9292;
+    transform: scale(1.15);
+}
