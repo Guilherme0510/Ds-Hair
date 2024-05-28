@@ -12,12 +12,12 @@ function Sobre() {
                 <div className="titulo-caixa text-center">
                     <h2 className="text-center py-4 mb-5">Sobre Nós</h2>
                 </div>
-                <div className="row dados-sobre">
-                    <div className="img-sobre">
+                <div className="row dados-sobre ">
+                    <div className="img-sobre col-md-6">
                         <img src="../../img/img-sobre.jpg" alt="img1" className="img-sobre1" />
                         <img src="../../img/img-sobre2.jpg" alt="img2" className="img-sobre2" />
                     </div>
-                    <div className="text-sobre">
+                    <div className="text-sobre col-md-6">
                         <div>
                             <h3 className="text-center pb-5">Desvendando o Encanto do DS Hair: Uma Jornada de Beleza e Autodescoberta.</h3>
                         </div>

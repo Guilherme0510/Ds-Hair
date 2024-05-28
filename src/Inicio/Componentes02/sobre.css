@@ -1,13 +1,14 @@
 .bg-sobre {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../public/img/img-bg-sobre.png);;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../public/img/img-bg-sobre.png);
+    ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.bg-sobre h1{
+.bg-sobre h1 {
     padding: 80px 0;
     color: #fff;
 }
@@ -19,42 +20,35 @@
 }
 
 .img-sobre {
-    flex: 1;
     position: relative;
 }
 
 .img-sobre1 {
-    width: 450px;
+    width: 350px;
     border-radius: 20px;
 }
 
 .img-sobre2 {
     position: absolute;
-    bottom: -150px;
-    right: 0px;
-    width: 300px;
+    left: 50%;
+    bottom: -30%;
+    width: 200px;
     border-radius: 20px;
 }
 
 .text-sobre {
     flex: 1;
-    padding: 0 20px;
+    padding-left: 50px;
 }
 
-.text-sobre P{
+.text-sobre P {
     color: #464444;
-}
-
-@media screen and (max-width: 728px) {
-    .text-sobre {
-        padding-top: 170px;
-    }
 }
 
 .valores {
     display: flex;
     justify-content: space-around;
-    padding-top: 300px;
+    padding-top: 100px;
 }
 
 .box-valores {
@@ -64,24 +58,25 @@
     border: 3px double #652C53;
     padding: 20px;
     transition: .8s;
-
+    margin-top: 40px;
 }
 
-.box-valores p{
+.box-valores p {
     color: #464444;
 
 }
 
-.box-valores:hover{
+.box-valores:hover {
     background-color: #f3daf3;
     transition: .8s;
 }
 
 @media screen and (max-width: 728px) {
 
-    .valores{
+    .valores {
         padding-top: 50px;
     }
+
     .box-valores {
         width: 250px;
         height: 450px;
@@ -89,7 +84,7 @@
     }
 }
 
-.box-valores i{    
+.box-valores i {
     border-radius: 10px;
     font-size: 25px;
     background-color: #C8A2C8;
@@ -98,7 +93,7 @@
     margin: 10px;
 }
 
-.box-valores i:hover{
+.box-valores i:hover {
     transform: rotate(360deg);
     font-size: 35px;
 }

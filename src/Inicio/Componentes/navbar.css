@@ -34,7 +34,7 @@ li {
     padding: 8px;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
     color: #fff;
     font-size: 16px;
     padding: 8px 0;
@@ -44,7 +44,7 @@ li {
     font-weight: 500;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:before {
+.navbar-expand-lg .navbar-nav .nav-link:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -57,8 +57,8 @@ li {
     transition: .3s
 }
 
-.navbar-expand-md .navbar-nav .active::before,
-.navbar-expand-md .navbar-nav .nav-link:hover::before {
+.navbar-expand-lg .navbar-nav .active::before,
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
     width: 100%
 }
 
@@ -72,34 +72,35 @@ li {
     width: 150px;
 }
 
-.navbar-expand-md .navbar-nav .nav-link:focus,
-.navbar-expand-md .navbar-nav .nav-link:hover,
-.navbar-expand-md .navbar-nav .nav-link:hover:before {
+.navbar-expand-lg .navbar-nav .nav-link:focus,
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar-expand-lg .navbar-nav .nav-link:hover:before {
     color: #fff
 }
 
-.navbar-expand-md .navbar-nav .active>.nav-link,
-.navbar-expand-md .navbar-nav .nav-link.active,
-.navbar-expand-md .navbar-nav .nav-link.active:before,
-.navbar-expand-md .navbar-nav .nav-link.open,
-.navbar-expand-md .navbar-nav .open>.nav-link {
+.navbar-expand-lg .navbar-nav .active>.nav-link,
+.navbar-expand-lg .navbar-nav .nav-link.active,
+.navbar-expand-lg .navbar-nav .nav-link.active:before,
+.navbar-expand-lg .navbar-nav .nav-link.open,
+.navbar-expand-lg .navbar-nav .open>.nav-link {
     color: #fff
 }
 
-.navbar-expand-md .navbar-toggler {
+.navbar-expand-lg .navbar-toggler {
     background: 0 0;
     border: 1px solid #fff;
     border-radius: 3px;
     margin: 5px;
     cursor: pointer;
-    float: right
+    float: right;
+    position: relative;
 }
 
-.navbar-expand-md .navbar-toggler i {
+.navbar-expand-lg .navbar-toggler i {
     color: #fff !important
 }
 
-.navbar-expand-md .navbar-toggler:focus {
+.navbar-expand-lg .navbar-toggler:focus {
     outline: none
 }
 

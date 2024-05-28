@@ -11,7 +11,7 @@ function Navbar() {
     });
   };
 
-  return (<nav className="navbar navbar-expand-md bg-inverse sticky-top scrolling-navbar">
+  return (<nav className="navbar navbar-expand-lg bg-inverse sticky-top scrolling-navbar">
     <div className="container">
       <Link to="/" className="navbar-brand"><img src="../img/logo-dshair-ñfundo.png" alt="" /></Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"

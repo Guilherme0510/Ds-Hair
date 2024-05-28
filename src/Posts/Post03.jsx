@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Inicio/Componentes/navbar";
 import Footer from "../Inicio/Componentes/footer";
-import BlogPost03 from "../Inicio/Compontente05/blog-post03";
+import BlogPost03 from "../Inicio/Compontente04/blog-post03";
 
 
 function Post03(){

@@ -27,7 +27,7 @@ function Equipe() {
                         Cabeleireira
                     </div>
                     <div>
-                        <h4 className="text-center py-4">Daniela</h4>
+                        <h4 className="text-center py-4 title-equipe">Daniela</h4>
                     </div>
                 </div>
                 <div className="equipe image-container" onClick={() => toggleProfession(2)}>
@@ -40,7 +40,7 @@ function Equipe() {
                         Manicure
                     </div>
                     <div>
-                        <h4 className="text-center py-4">Agatha</h4>
+                        <h4 className="text-center py-4 title-equipe">Agatha</h4>
                     </div>
                 </div>
                 <div className="equipe image-container" onClick={() => toggleProfession(3)}>
@@ -53,7 +53,7 @@ function Equipe() {
                         Lash Design
                     </div>
                     <div>
-                        <h4 className="text-center py-4">Raquel</h4>
+                        <h4 className="text-center py-4 title-equipe">Raquel</h4>
                     </div>
                 </div>
             </div>

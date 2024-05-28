@@ -1,52 +1,7 @@
 @media only screen and (max-width: 992px) {
-
-    nav {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        text-align: center;
-    }
-
-    .navbar-expand-md .navbar-nav .nav-link {
-        margin-left: 0;
-    }
-
-    .navbar-expand-md .navbar-nav .nav-link:before {
-        display: none;
-    }
-
-    .navbar-toggler {
-        margin-right: 5px;
-        margin-left: auto;
-    }
-
-    .btn-sigin-whats,
-    .btn-sigin-face,
-    .btn-sigin-insta {
-        padding: 5px;
-    }
-
     .site-footer {
-        padding-top: 4em;
-        padding-bottom: 1em;
+        padding-top: 2em;
     }
-
-    .logo-footer img {
-        width: 200px;
-        margin-top: 30px;
-    }
-
-    .copyright-text {
-        text-align: center;
-
-    }
-
-
-    .equipe {
-        width: 45%;
-        max-width: 300px;
-        margin-bottom: 20px;
-    }
-
     .salao-equipe {
         align-items: center;
         display: flex;
@@ -55,11 +10,6 @@
 
     .image-container {
         margin-bottom: 80px;
-    }
-
-    .text-behind {
-        font-size: 14px;
-        border-radius: 0 0 100px 100px;
     }
 
     .serv-types .serv-type-item img,
@@ -73,48 +23,63 @@
 
     .blog {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .head-blog p {
         width: 80% !important;
     }
-
     .item-blog {
         width: 100% !important;
-        margin-left: 0 !important;
+        margin-left: 15px !important;
+    }
+
+    .text-blog h3{
+        font-size: 20px;
+    }
+    .text-blog p{
+        font-size: 14px;
+    }
+
+    .footer-blog{
+        margin-left: 20px;
+    }
+    .footer-blog p{
+        font-size: 12px;
     }
 
 
     /* Post */
 
     .head-post h2 {
-        position: relative!important;
-        bottom: -55px !important;
+        position: relative !important;
         width: 90% !important;
     }
-    .head-post img{
-        height: 50vh!important;
 
+    .head-post img {
+        height: 20vh !important;
     }
 
 
+    /* Contato */
     .contato {
         align-items: center;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-      }
-    
-      .contato-email {
+    }
+
+    .contato-email {
         max-width: 80%;
-      }
-    
-      .contato-email .contato-form .input {
+    }
+
+    .contato-email .contato-form .input {
         width: 100%;
         max-width: 100%;
-      }
-    
-      .info-contato {
+    }
+
+    .info-contato {
         padding: 0 20px;
-      }
+    }
 
 }

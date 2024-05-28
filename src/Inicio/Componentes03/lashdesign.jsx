@@ -10,6 +10,7 @@ function LashDesign() {
             <div className="text-center header-manicure">
                 <h1>Escolha um serviço</h1>
                 <p>Nesta página, você pode escolher entre os serviços de lash design e design de sobrancelha que oferecemos. Apresentamos uma lista completa de opções para realçar a beleza dos seus olhos e sobrancelhas, incluindo técnicas especializadas para criar o visual desejado.</p>
+                <small className="text-dark ">Caso queira saber mais clique em cima do ícone</small>
             </div>
             <div className="row itens-manicure">
                 <div className="item-manicure">

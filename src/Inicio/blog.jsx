@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from './Componentes/navbar'
 import Footer from './Componentes/footer'
-import BlogInicio from "./Compontente05/blog";
+import BlogInicio from "./Compontente04/blog";
 function Blog(){
 
     return(

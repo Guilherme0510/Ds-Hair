@@ -10,6 +10,7 @@ function Cabelo() {
             <div className="text-center header-cabelo">
                 <h1>Escolha um serviço</h1>
                 <p>Nesta página, você pode selecionar um serviço que você precisa. Aqui estão apresentados todos os serviços de cabelo que oferecemos, incluindo os mais populares. Se você precisar de um serviço de cabelo personalizado, por favor, entre em contato conosco.</p>
+                <small className="text-dark ">Caso queira saber mais clique em cima do ícone</small>
             </div>
             <div className="row itens-cabelo">
                 <div className="item-cabelo">

@@ -4,7 +4,7 @@
 
 .carousel img {
   height: 600px;
-  animation: opacityAnimation 5s infinite; /* 5 segundos para completar a animação e repetir infinitamente */
+  animation: opacityAnimation 5s infinite; 
 }
 .text-banner {
     position: absolute;
@@ -34,14 +34,13 @@
     font-size: 2vw;
   }
   
-  /* Media query for smaller screens */
   @media (max-width: 768px) {
     .carousel-title {
-      font-size: 35px; /* Adjust font size for smaller screens */
+      font-size: 35px; 
     }
     
     .carousel-text {
-      font-size: 17px; /* Adjust font size for smaller screens */
+      font-size: 17px; 
     }
   }
 

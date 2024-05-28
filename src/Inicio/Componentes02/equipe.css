@@ -1,5 +1,5 @@
 .caixa-equipe{
-  padding: 150px 0;
+  padding: 50px;
 }
 
 .titulo-caixa {
@@ -60,10 +60,12 @@
   display: block;
   width: 100%;
   height: auto;
+  transition: all .5s ease-in-out;
 }
 
 .rotate-image:hover {
   opacity: .7;
+  transform: scale(0.9);
 }
 
 .text-behind {

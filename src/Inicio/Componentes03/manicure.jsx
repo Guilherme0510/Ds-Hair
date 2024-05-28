@@ -10,6 +10,8 @@ function Manicure() {
             <div className="text-center header-manicure">
                 <h1>Escolha um serviço</h1>
                 <p>Nesta página, você pode selecionar o serviço de unha que melhor atenda às suas necessidades. Apresentamos uma lista completa de todos os serviços de manicure disponíveis, incluindo os mais procurados. Caso precise de um serviço de unha personalizado, por favor, entre em contato conosco.</p>
+                <br />
+                <small className="text-dark ">Caso queira saber mais clique em cima do ícone</small>
             </div>
             <div className="row itens-manicure">
                 <div className="item-manicure">
