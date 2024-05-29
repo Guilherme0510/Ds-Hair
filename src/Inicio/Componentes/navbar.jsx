@@ -44,7 +44,7 @@ function Navbar() {
                 <a className="btn btn-sigin-face" href="https://www.facebook.com/danisilvalora"><i className="fa fa-facebook"></i></a>
                 <a className="btn btn-sigin-insta" href="https://www.instagram.com/ds_hairespacomulher/"><i className="fa fa-instagram"></i></a>
                 <span className="btn-block text-nowrap">
-                  <strong className="text-white">Horário de Atendimento</strong><br />
+                  <h5><strong className="text-white">Horário de Atendimento</strong></h5>
                   <p className="text-white">Segunda - Sexta das 07:00 &agrave;s 20:00</p>
                 </span>
               </div>

@@ -33,9 +33,9 @@ function Contate() {
 
     return (
 
-        <section className="container ">
+        <section className="container">
             
-            <div className='text-center py-5'>
+            <div className='text-center py-5 text-underline'>
                     <h1><i>Entre em contato conosco</i></h1>
                 </div>
             <div className='contato '>
@@ -89,7 +89,7 @@ function Contate() {
                             value={message}
                         />
 
-                        <input className="button" type="submit" value="Enviar" />
+                        <input className="btn button-enviar " type="submit" value="Enviar" />
                     </form>
                 </div>
             </div>

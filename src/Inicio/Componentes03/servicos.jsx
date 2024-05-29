@@ -47,7 +47,7 @@ function Servicos() {
                         <img src="../../../../img/img-serv-type3.png" alt="" />
                         <div className="serv-type-text">
                             <h2 className="pb-5"><i>Lash Design / Sobrancelha</i></h2>
-                            <p>Em nosso salão, não apenas realçamos a beleza natural de seus olhos com nosso serviço de lash design, mas também aprimoramos suas sobrancelhas para complementar sua aparência de maneira elegante e sofisticada.</p>
+                            <p>Não apenas realçamos a beleza natural de seus olhos com nosso serviço de lash design, mas também aprimoramos suas sobrancelhas para complementar sua aparência de maneira elegante e sofisticada.</p>
                             <Link onClick={scrollToTop} to={'/servicos-lash_sobrancelha'} className="btn btn-primary btn-serv-mais">Saiba Mais</Link>
                         </div>
                     </div>

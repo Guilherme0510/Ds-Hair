@@ -5,7 +5,6 @@
    color: #fff;
    display: flex;
    justify-content: space-around;
-   margin-bottom: 100px;
  }
 
  .contato-email {
@@ -43,8 +42,18 @@
    color: #fff;
  }
 
- input .button {
-   background-color: #000;
+ .contato-form .btn {
+  border-radius: 20px;
+   background-color: #3f1331;
+   color: #fff;
+   width: 40%;
+   margin: 10px auto;
+   transition: all .5s ease-in-out;
+ }
+
+ .contato-form .btn:hover{
+  background-color: #2e0d24;
+  transform: scale(1.1);
  }
 
  .info-contato {
@@ -112,21 +121,7 @@
    height: 94px;
    resize: none;
  }
-
- .button {
-   color: #fff;
-   margin: auto;
-   width: 100px;
-   height: 34px;
-   border-radius: 4px;
-   border: 0;
-   cursor: pointer;
-   background-color: #652C53;
-   font-size: 18px;
-   transition: background-color, transform 0.8s;
+ .text-underline{
+  text-decoration: underline;
  }
 
- .button:hover {
-   background-color: #3b1a30;
-   transform: scale(1.11);
- }

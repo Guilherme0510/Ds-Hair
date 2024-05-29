@@ -1,7 +1,49 @@
 @media only screen and (max-width: 992px) {
+
+    p {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    .container .slider p {
+        font-size: 18px;
+    }
+
+    header .nav li a {
+        font-size: 22px;
+    }
+
+    .carousel-title {
+        font-size: 60px;
+    }
+
+    .carousel-text {
+        font-size: 22px;
+    }
+
     .site-footer {
         padding-top: 2em;
     }
+
     .salao-equipe {
         align-items: center;
         display: flex;
@@ -29,22 +71,25 @@
     .head-blog p {
         width: 80% !important;
     }
+
     .item-blog {
         width: 100% !important;
         margin-left: 15px !important;
     }
 
-    .text-blog h3{
+    .text-blog h3 {
         font-size: 20px;
     }
-    .text-blog p{
+
+    .text-blog p {
         font-size: 14px;
     }
 
-    .footer-blog{
+    .footer-blog {
         margin-left: 20px;
     }
-    .footer-blog p{
+
+    .footer-blog p {
         font-size: 12px;
     }
 
@@ -69,17 +114,22 @@
         text-align: center;
     }
 
-    .contato-email {
-        max-width: 80%;
+    .contato-email{
+        max-width: 100%!important;
     }
 
     .contato-email .contato-form .input {
+        height: 50px;
         width: 100%;
         max-width: 100%;
     }
 
-    .info-contato {
-        padding: 0 20px;
+    .contato-email .contato-form textarea{
+        height: 200px!important;
     }
 
+    .contato-form .btn{
+        width: 50%!important;
+        padding: 15px 0;
+    }
 }
