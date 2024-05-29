@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './navbar.css';
 
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -11,39 +27,66 @@ function Navbar() {
     });
   };
 
-  return (<nav className="navbar navbar-expand-lg bg-inverse sticky-top scrolling-navbar">
-    <div className="container">
-      <Link to="/" className="navbar-brand"><img src="../img/logo-dshair-ñfundo.png" alt="" /></Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <i className="fa fa-bars"></i>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <ul className="navbar-nav mr-auto w-100 justify-content-end text-center">
-          <li className="nav-item">
-            <Link className="nav-link page-scroll" onClick={scrollToTop} to="/">Inicio</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link page-scroll" onClick={scrollToTop} to="/sobre-nos">Sobre</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link page-scroll" onClick={scrollToTop} to="/servicos">Serviços</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link page-scroll" onClick={scrollToTop} to="/blog">Blog</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link page-scroll" onClick={scrollToTop} to="/contato">Contatos</Link>
-          </li>
-          <li className="nav-item row justify-content-center">
-            <a className="btn btn-sigin-whats" href="https://wa.link/iod1ow"><i className="fa fa-whatsapp"></i></a>
-            <a className="btn btn-sigin-face" href="https://wa.link/iod1ow"><i className="fa fa-facebook"></i></a>
-            <a className="btn btn-sigin-insta" href="https://wa.link/iod1ow"><i className="fa fa-instagram"></i></a>
-          </li>
-        </ul>
+  return (
+    <header className="header style2">
+      <div className="middle-header">
+        <div className="row ml-0 mr-0">
+          <div className="col-md-4 d-flex flex-column justify-content-around align-items-center">
+            <div className="logo">
+              <Link to="/" className="navbar-brand"><img src="../img/logo-dshair-ñfundo.png" alt="" /></Link>
+            </div>
+            <div className="mobile-nav"></div>
+          </div>
+          <div className="col-md-8 d-flex flex-row justify-content-center">
+            <div className="widget-main d-inline-flex flex-sm-row flex-column">
+              <div className="d-flex flex-row justify-content-start align-items-center mt-sm-0 mt-2">
+                <a className="btn btn-sigin-whats" href="https://wa.link/sq3g7d"><i className="fa fa-whatsapp"></i></a>
+                <a className="btn btn-sigin-face" href="https://www.facebook.com/danisilvalora"><i className="fa fa-facebook"></i></a>
+                <a className="btn btn-sigin-insta" href="https://www.instagram.com/ds_hairespacomulher/"><i className="fa fa-instagram"></i></a>
+                <span className="btn-block text-nowrap">
+                  <strong className="text-white">Horário de Atendimento</strong><br />
+                  <p className="text-white">Segunda - Sexta das 07:00 &agrave;s 20:00</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+
+      <div className={`header-inner ${isScrolled ? 'fixed' : ''}`}>
+        <div className="container">
+          <div className="inner">
+            <div className="row">
+              <div className="col-12 d-flex flex-row justify-content-center">
+                <div className="main-menu">
+                  <nav className="navigation">
+                    <ul className="nav menu align-items-center justify-content-center">
+                      <li className="nav-item">
+                        <Link className="nav-link page-scroll" onClick={scrollToTop} to="/">Inicio</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link page-scroll" onClick={scrollToTop} to="/sobre-nos">Sobre</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link page-scroll" onClick={scrollToTop} to="/servicos">Serviços</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link page-scroll" onClick={scrollToTop} to="/blog">Blog</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link className="nav-link page-scroll" onClick={scrollToTop} to="/contato">Contatos</Link>
+                      </li>
+                      <li className="nav-item row justify-content-center">
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 }
 

@@ -20,7 +20,7 @@ function BlogInicio() {
             </div>
             <div className="container">
                 <div className='head-blog text-center'>
-                    <h1>Nosso Blog</h1>
+                    <h1><i>Nosso Blog</i></h1>
                     <p>Nosso blog é o seu guia definitivo para descobrir as últimas tendências de beleza, dicas de cuidados capilares e atualizações sobre os serviços oferecidos em nosso salão. Explore conosco e descubra como realçar sua beleza e bem-estar!</p>
                 </div>
                 <div className="blog ">

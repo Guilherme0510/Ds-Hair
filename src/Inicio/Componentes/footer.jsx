@@ -59,9 +59,9 @@ function Footer() {
         </div>
 
       </div>
-      <div class=" text-white">
-        <p class="copyright-text">Desenvolvido por &copy; Guilherme
-        </p>
+      <div class="text-white pt-5">
+        <p class="copyright-text">Desenvolvido por &copy; SilvaWeb Sites </p>
+       <p className="copyright-text"><Link to={'https://wa.link/5qrouq'}>(11) 93291-1121</Link></p>
       </div>
     </footer>
   );

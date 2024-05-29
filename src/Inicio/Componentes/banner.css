@@ -2,9 +2,40 @@
     padding: 4em 0 4em 0;
 }
 
+.carousel-img{
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner1.jpg);
+}
+
+.carousel-img1{
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner2.jpg);
+}
+
+.carousel-img2{
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner3.jpg);
+}
+
+.carousel-img3{
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner4.jpg);
+}
+
 .carousel img {
   height: 600px;
-  animation: opacityAnimation 5s infinite; 
 }
 .text-banner {
     position: absolute;
@@ -12,26 +43,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
-    animation: opacityAnimation 5s infinite;
+    padding: 30px;
+    border-radius: 15px;
 }
-
-@keyframes opacityAnimation {
-  0%, 100% {
-      opacity: 0; 
-  }
-  50% {
-      opacity: 1; 
-  }
-}
-
 .carousel-title {
     font-size: 4vw;
     color: #fff;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
   }
   
   .carousel-text {
     font-size: 2vw;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0,0,0,);
+
   }
   
   @media (max-width: 768px) {
