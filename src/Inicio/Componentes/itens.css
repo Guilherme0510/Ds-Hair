@@ -1,0 +1,60 @@
+.text-serv,
+.text-serv p {
+    color: #464444;
+    text-align: center;
+}
+
+.img-container,
+.img-container01,
+.img-container02 {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.img-container {
+    background-image: url(../../../public/img/img-serv-home1.jpg);
+}
+
+.img-container01 {
+    background-image: url(../../../public/img/img-serv-home2.jpg);
+}
+
+.img-container02 {
+    background-image: url(../../../public/img/img-serv-home3.jpg);
+}
+
+.card {
+    transition: all .3s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.05;
+    margin-top: -10px;
+    margin-left: -10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+        -10px -10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-serv {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #652C53;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-serv:hover {
+    transform: translateX(-50%) scale(1.2);
+    background-color: #451e3a;
+    color: #fff;
+}

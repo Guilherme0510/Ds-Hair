@@ -1,0 +1,59 @@
+.carousel-img, .carousel-img1, .carousel-img2, .carousel-img3 {
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner1.jpg);
+}
+
+.carousel-img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner2.jpg);
+}
+
+.carousel-img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner3.jpg);
+}
+
+.carousel-img3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/img/img-banner4.jpg);
+}
+
+.text-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.carousel-title {
+    font-size: 4vw;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-text {
+    font-size: 2vw;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-img, .carousel-img1, .carousel-img2, .carousel-img3 {
+        height: 400px;
+    }
+
+    .carousel-title {
+        font-size: 35px;
+    }
+
+    .carousel-text {
+        font-size: 17px;
+    }
+}

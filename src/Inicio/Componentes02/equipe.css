@@ -1,0 +1,82 @@
+.caixa-equipe{
+  padding-block: 50px;
+}
+
+.salao-equipe {
+  display: flex;
+  justify-content: space-around;
+}
+
+.equipe {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px double #652C53;
+}
+
+.equipe img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-opacity {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all .5s ease-in-out;
+}
+
+.img-opacity:hover {
+  opacity: .7;
+  transform: scale(0.9);
+}
+
+.text-behind {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 0  0 200px 200px;
+}
+
+.text-behind.active {
+  opacity: 1;
+}
+
+.image-container:hover .text-behind {
+  opacity: 1;
+}
+
+.img-bg{
+  background-image: url(../../../public/img/img-bg-equipe.png);
+  height: 100px;
+  width: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: .7;
+}
+
+
+@media screen and (max-width: 992px){
+  .margin-equipe-reponsive{
+    margin-top: 100px;
+  }
+}

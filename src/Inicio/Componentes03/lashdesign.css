@@ -1,0 +1,84 @@
+.header-manicure p{
+    margin: auto;
+    font-size: 14px;
+    width: 70%;
+}
+
+.header-manicure small{
+    text-transform: uppercase;
+}
+
+.itens-manicure{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.manicure img{
+    margin-bottom: 40px;
+}
+
+
+.item-manicure{
+    width: 300px;
+    text-align: center;
+    transition: all .7s ease;
+
+}
+
+.item-manicure:hover{
+    transform: scale(1.2);
+}
+
+.saiba-mais {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s, transform 0.7s;
+    background: #652C53;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.item-manicure .saiba-mais{
+    transition: all .6s ease;
+    position: absolute; /* Adicione esta linha */
+    bottom: 40px; /* Adicione esta linha */
+    left: 100px; /* Adicione esta linha */
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.saiba-mais:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #37162d;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.item-manicure:hover .saiba-mais {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.item-manicure:hover h4 {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.item-manicure:hover p {
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.btn-voltar{
+    color: #fff;
+    background: #652C53;
+    padding: 10px 20px;
+    position: sticky;
+    left: 10px;
+    top: 120px;
+    z-index: 10;
+}
