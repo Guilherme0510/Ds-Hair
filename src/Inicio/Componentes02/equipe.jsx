@@ -12,15 +12,15 @@ function Equipe() {
 
     return (
         <section className="container caixa-equipe">
-            <div className="titulo-caixa text-center">
+            <div className="titulo-caixa text-center" data-aos="fade-down">
                 <h2 className="text-center py-4">Nossa Equipe</h2>
             </div>
             <div className="salao-equipe py-5 row">
-                <div className="equipe image-container col-lg-6 col-12" onClick={() => toggleProfession(1)}>
+                <div className="equipe image-container col-lg-6 col-12" onClick={() => toggleProfession(1)} data-aos="fade-right">
                     <div className="img-bg"></div>
                     <img
                         src="img/img-equipe1.png"
-                        alt="Imagem"
+                        alt="Imagem Daniela"
                         className="img-opacity img-fluid"
                     />
                     <div className={`text-behind ${showProfession[1] ? "active" : ""}`}>
@@ -30,12 +30,11 @@ function Equipe() {
                         <h4 className="text-center py-4 title-equipe">Daniela</h4>
                     </div>
                 </div>
-                <div className="equipe image-container margin-equipe-reponsive col-lg-6 col-12" onClick={() => toggleProfession(2)}>
+                <div className="equipe image-container margin-equipe-reponsive col-lg-6 col-12" onClick={() => toggleProfession(2)} data-aos="fade-left">
                     <div className="img-bg"></div>
-
                     <img
                         src="img/img-equipe1.png"
-                        alt="Imagem"
+                        alt="Imagem Agatha"
                         className="img-opacity img-fluid"
                     />
                     <div className={`text-behind ${showProfession[2] ? "active" : ""}`}>

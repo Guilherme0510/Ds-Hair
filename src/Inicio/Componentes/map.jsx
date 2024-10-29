@@ -4,7 +4,7 @@ import './map.css';
 function Map() {
   return (
     <section className ="location-section">
-      <div className="text-center py-5">
+      <div className="text-center py-5" data-aos="zoom-in-down" data-aos-duration='500'>
         <h1><i>Nossa Localização</i></h1>
       </div>
       <div className ="map-container">

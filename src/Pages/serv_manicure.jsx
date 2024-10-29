@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from "./Componentes/navbar";
-import Footer from "./Componentes/footer";
-import Manicure from "./Componentes03/manicure";
+import Navbar from "../Inicio/Componentes/navbar";
+import Footer from "../Inicio/Componentes/footer";
+import Manicure from "../Inicio/Componentes03/manicure";
 
 function ServicoManicure(){
     

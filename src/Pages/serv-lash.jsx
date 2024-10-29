@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from "./Componentes/navbar";
-import LashDesign from "./Componentes03/lashdesign";
-import Footer from "./Componentes/footer";
+import Navbar from "../Inicio/Componentes/navbar";
+import LashDesign from "../Inicio/Componentes03/lashdesign";
+import Footer from "../Inicio/Componentes/footer";
 
 function ServicoLash() {
 

@@ -14,13 +14,13 @@ function Itens() {
 
   return (
     <section>
-    <div className ="album py-5">
+    <div className ="album py-5"data-aos='fade-down' data-aos-duration='500'>
         <div className ="container">
             <div className ="text-center py-5">
                 <h1><i>Serviços Disponíveis</i></h1>
             </div>
             <div className ="row d-flex justify-content-around">
-                <div className ="col-10 col-sm-6 col-md-4 mb-4">
+                <div className ="col-10 col-sm-6 col-md-4 mb-4" data-aos='fade-up' data-aos-duration='500' data-aos-delay='200'>
                     <div className ="card">
                         <div className ="img-container"></div>
                         <div className ="card-body text-serv">
@@ -32,7 +32,7 @@ function Itens() {
                         </div>
                     </div>
                 </div>
-                <div className ="col-10 col-sm-6 col-md-4 mb-4">
+                <div className ="col-10 col-sm-6 col-md-4 mb-4"data-aos='fade-up' data-aos-duration='500' data-aos-delay='400'>
                     <div className ="card">
                         <div className ="img-container01"></div>
                         <div className ="card-body text-serv">
@@ -44,7 +44,7 @@ function Itens() {
                         </div>
                     </div>
                 </div>
-                <div className ="col-10 col-sm-6 col-md-4 mb-4">
+                <div className ="col-10 col-sm-6 col-md-4 mb-4"data-aos='fade-up' data-aos-duration='500' data-aos-delay='600'>
                     <div className ="card">
                         <div className ="img-container02"></div>
                         <div className ="card-body text-serv">

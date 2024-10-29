@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from "./Componentes/navbar";
-import Footer from "./Componentes/footer";
-import Cabelo from "./Componentes03/cabelo";
+import Navbar from "../Inicio/Componentes/navbar";
+import Footer from "../Inicio/Componentes/footer";
+import Cabelo from "../Inicio/Componentes03/cabelo";
 
 function ServicoCabelo(){
     

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './avaliacao.css';
 
 const slides = [
@@ -43,7 +43,7 @@ function Avaliacao() {
     const { name, job, image, info } = slides[currentSlideIndex];
 
     return (
-        <section className="section-padding pt-5 avaliacao">
+        <section className="section-padding pt-5 avaliacao" data-aos='fade-left' data-aos-duration='500'>
             <div className="container">
                 <div className='text-center py-5'>
                 <h1><i>O que elas andam dizendo?</i></h1>

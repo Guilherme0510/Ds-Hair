@@ -1,9 +1,9 @@
 import React from "react";
 
-import Navbar from "./Componentes/navbar";
-import Footer from "./Componentes/footer";
-import Contate from "./Componentes05/contato";
-import Map from "./Componentes/map";
+import Navbar from "../Inicio/Componentes/navbar";
+import Footer from "../Inicio/Componentes/footer";
+import Contate from "../Inicio/Componentes05/contato";
+import Map from "../Inicio/Componentes/map";
 
 function Contato(){
     return(

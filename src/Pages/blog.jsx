@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from './Componentes/navbar'
-import Footer from './Componentes/footer'
-import BlogInicio from "./Compontente04/blog";
+import Navbar from '../Inicio/Componentes/navbar'
+import Footer from '../Inicio/Componentes/footer'
+import BlogInicio from "../Inicio/Compontente04/blog";
 function Blog(){
 
     return(

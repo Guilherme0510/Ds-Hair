@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from "./Componentes/navbar";
-import Footer from "./Componentes/footer";
-import Servicos from "./Componentes03/servicos";
+import Navbar from "../Inicio/Componentes/navbar";
+import Footer from "../Inicio/Componentes/footer";
+import Servicos from "../Inicio/Componentes03/servicos";
 
 function Servico(){
     

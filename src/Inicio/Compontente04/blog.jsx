@@ -23,9 +23,9 @@ function BlogInicio() {
                     <p>Nosso blog é o seu guia definitivo para descobrir as últimas tendências de beleza, dicas de cuidados capilares e atualizações sobre os serviços oferecidos em nosso salão. Explore conosco e descubra como realçar sua beleza e bem-estar!</p>
                 </div>
                 <div className="blog row">
-                    <div className="item-blog col-lg-5 col-10">
+                    <div className="item-blog col-lg-5 col-10" data-aos="fade-up">
                         <div className='img-blog'>
-                            <img src="../../../../img/img-bg-blog02.png" alt="" />
+                            <img src="../../../../img/img-bg-blog02.png" alt="Imagem do post sobre microblading e micropigmentação" />
                         </div>
                         <div className='content-blog'>
                             <div className='text-blog'>
@@ -34,14 +34,14 @@ function BlogInicio() {
                                 <Link to={'/blog/post04'} className='btn btn-blog' onClick={scrollToTop}>Ver Sobre</Link>
                             </div>
                             <div className='footer-blog'>
-                                <p className='color-black'><i class="fa fa-calendar"></i>22/05/2024</p>
-                                <p className='color-black'><i class="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
+                                <p className='color-black'><i className="fa fa-calendar"></i>22/05/2024</p>
+                                <p className='color-black'><i className="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
                             </div>
                         </div>
                     </div>
-                    <div className="item-blog col-lg-5 col-10">
+                    <div className="item-blog col-lg-5 col-10" data-aos="fade-up">
                         <div className='img-blog'>
-                            <img src="../../../../img/img-bg-blog03.png" alt="" />
+                            <img src="../../../../img/img-bg-blog03.png" alt="Imagem do post sobre extensões de cílios" />
                         </div>
                         <div className='content-blog'>
                             <div className='text-blog'>
@@ -50,16 +50,16 @@ function BlogInicio() {
                                 <Link to={'/blog/post03'} className='btn btn-blog' onClick={scrollToTop}>Ver Sobre</Link>
                             </div>
                             <div className='footer-blog'>
-                                <p className='color-black'><i class="fa fa-calendar"></i>22/05/2024</p>
-                                <p className='color-black'><i class="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
+                                <p className='color-black'><i className="fa fa-calendar"></i>22/05/2024</p>
+                                <p className='color-black'><i className="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="blog row">
-                    <div className="item-blog col-lg-5 col-10">
+                    <div className="item-blog col-lg-5 col-10" data-aos="fade-up">
                         <div className='img-blog01'>
-                            <img src="../../../../img/img-bg-blog.png" alt="" />
+                            <img src="../../../../img/img-bg-blog.png" alt="Imagem do post sobre cortes e colorações para o verão" />
                         </div>
                         <div className='content-blog'>
                             <div className='text-blog'>
@@ -68,14 +68,14 @@ function BlogInicio() {
                                 <Link to={'/blog/post02'} className='btn btn-blog' onClick={scrollToTop}>Ver Sobre</Link>
                             </div>
                             <div className='footer-blog'>
-                                <p className='color-black'><i class="fa fa-calendar"></i>22/05/2024</p>
-                                <p className='color-black'><i class="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
+                                <p className='color-black'><i className="fa fa-calendar"></i>22/05/2024</p>
+                                <p className='color-black'><i className="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
                             </div>
                         </div>
                     </div>
-                    <div className="item-blog col-lg-5 col-10">
+                    <div className="item-blog col-lg-5 col-10" data-aos="fade-up">
                         <div className='img-blog'>
-                            <img src="../../../../img/img-bg-blog01.png" alt="" />
+                            <img src="../../../../img/img-bg-blog01.png" alt="Imagem do post sobre nail art" />
                         </div>
                         <div className='content-blog'>
                             <div className='text-blog'>
@@ -84,15 +84,14 @@ function BlogInicio() {
                                 <Link to={'/blog/post01'} className='btn btn-blog' onClick={scrollToTop}>Ver Sobre</Link>
                             </div>
                             <div className='footer-blog'>
-                                <p className='color-black'><i class="fa fa-calendar"></i>22/05/2024</p>
-                                <p className='color-black'><i class="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
+                                <p className='color-black'><i className="fa fa-calendar"></i>22/05/2024</p>
+                                <p className='color-black'><i className="fa fa-user"></i>Postado por <b>Daniela da Silva</b></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     );
 }
 

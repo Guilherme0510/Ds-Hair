@@ -1,27 +1,34 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Site from "./Inicio/inicio";
-import SobreNos from "./Inicio/sobre";
-import Servico from "./Inicio/servicos";
-import ServicoCabelo from "./Inicio/serv_cabelo";
-import ServicoManicure from "./Inicio/serv_manicure";
-import ServicoLash from "./Inicio/serv-lash";
-import Contato from "./Inicio/contato";
-import Blog from "./Inicio/blog";
+import Site from "./Pages/inicio";
+import SobreNos from "./Pages/sobre";
+import Servico from "./Pages/servicos";
+import ServicoCabelo from "./Pages/serv_cabelo";
+import ServicoManicure from "./Pages/serv_manicure";
+import ServicoLash from "./Pages/serv-lash";
+import Contato from "./Pages/contato";
+import Blog from "./Pages/blog";
 import Post01 from "./Posts/Post01";
 import Post02 from "./Posts/Post02";
 import Post03 from "./Posts/Post03";
 import Post04 from "./Posts/Post04";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<Site />} path="/" />
         <Route element={<SobreNos />} path="/sobre-nos" />
         <Route element={<Servico />} path="/servicos" />
-        <Route element={<ServicoCabelo />} path="/servicos-cabelo" /> 
+        <Route element={<ServicoCabelo />} path="/servicos-cabelo" />
         <Route element={<ServicoManicure />} path="/servicos-unha" />
         <Route element={<ServicoLash />} path="/servicos-lash_sobrancelha" />
         <Route element={<Blog />} path="/blog" />
@@ -30,11 +37,9 @@ function App() {
         <Route element={<Post03 />} path="/blog/post03" />
         <Route element={<Post04 />} path="/blog/post04" />
         <Route element={<Contato />} path="/contato" />
-
       </Routes>
     </BrowserRouter>
   );
-
 }
 
 export default App;
