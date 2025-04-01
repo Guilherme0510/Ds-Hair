@@ -44,7 +44,7 @@ function Itens() {
                         </div>
                     </div>
                 </div>
-                <div className ="col-10 col-sm-6 col-md-4 mb-4"data-aos='fade-up' data-aos-duration='500' data-aos-delay='600'>
+                {/* <div className ="col-10 col-sm-6 col-md-4 mb-4"data-aos='fade-up' data-aos-duration='500' data-aos-delay='600'>
                     <div className ="card">
                         <div className ="img-container02"></div>
                         <div className ="card-body text-serv">
@@ -55,7 +55,7 @@ function Itens() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>

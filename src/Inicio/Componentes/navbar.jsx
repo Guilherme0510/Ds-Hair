@@ -49,7 +49,7 @@ function Navbar() {
                                     <a className="btn btn-sigin-insta btn-sigin" href="https://www.instagram.com/ds_hairespacomulher/"><i className="fa-brands fa-instagram"></i></a>
                                     <span className="btn-block text-nowrap">
                                         <h5><strong className="text-white">Horário de Atendimento</strong></h5>
-                                        <p className="text-white">Segunda - Sexta das 07:00 às 20:00</p>
+                                        <p className="text-white">Segunda - Sábado das 07:00 às 20:00</p>
                                     </span>
                                 </div>
                             </div>

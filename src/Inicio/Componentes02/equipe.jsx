@@ -19,7 +19,7 @@ function Equipe() {
                 <div className="equipe image-container col-lg-6 col-12" onClick={() => toggleProfession(1)} data-aos="fade-right">
                     <div className="img-bg"></div>
                     <img
-                        src="img/img-equipe1.png"
+                        src="img/dani_sobre.jpg"
                         alt="Imagem Daniela"
                         className="img-opacity img-fluid"
                     />
@@ -33,7 +33,7 @@ function Equipe() {
                 <div className="equipe image-container margin-equipe-reponsive col-lg-6 col-12" onClick={() => toggleProfession(2)} data-aos="fade-left">
                     <div className="img-bg"></div>
                     <img
-                        src="img/img-equipe1.png"
+                        src="img/agatha_sobre.jpg"
                         alt="Imagem Agatha"
                         className="img-opacity img-fluid"
                     />
