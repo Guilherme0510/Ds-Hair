@@ -40,7 +40,7 @@ function Contate() {
                 setIsSent(true);
                 setError('');
             }, (err) => {
-                console.log('Erro: ', err);
+                console.log('Erro: ');
                 setError('Ocorreu um erro ao enviar o email. Tente novamente.');
                 setIsSent(false);
             });
