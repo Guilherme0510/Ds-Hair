@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 import { db } from "@/lib/firebase";
@@ -59,7 +59,7 @@ export default function NovoPost() {
             selected={data}
             onSelect={setData}
             locale={ptBR}
-            className="rounded-md border"
+            className="rounded-md border shadow"
           />
         </div>
 
