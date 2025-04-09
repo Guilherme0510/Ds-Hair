@@ -4,15 +4,13 @@ import { useState } from "react";
 import { db } from "@/lib/firebase";
 import { addDoc, collection } from "firebase/firestore";
 import { useRouter } from "next/navigation";
-import { Calendar } from "@/components/ui/calendar"; // <- certifique-se do caminho
-import { format } from "date-fns";
-import { ptBR } from "date-fns/locale"; // opcional: para data em português
+import { format, parseISO } from "date-fns";
 
 export default function NovoPost() {
   const [titulo, setTitulo] = useState("");
   const [resumo, setResumo] = useState("");
   const [conteudo, setConteudo] = useState("");
-  const [data, setData] = useState<Date | undefined>(new Date());
+  const [data, setData] = useState<string>(new Date().toISOString().split("T")[0]); // "yyyy-MM-dd"
 
   const router = useRouter();
 
@@ -23,7 +21,7 @@ export default function NovoPost() {
       titulo,
       resumo,
       conteudo,
-      data: format(data, "dd/MM/yyyy"),
+      data: format(parseISO(data), "dd/MM/yyyy"),
     });
 
     router.push("/blog");
@@ -52,14 +50,13 @@ export default function NovoPost() {
           className="border border-black rounded-md px-3 py-2"
         />
 
-        <div className="bg-white border border-black rounded-md px-3 py-2">
+        <div>
           <label className="font-semibold mb-2 block">Data do Post</label>
-          <Calendar
-            mode="single"
-            selected={data}
-            onSelect={setData}
-            locale={ptBR}
-            className="rounded-md border shadow"
+          <input
+            type="date"
+            value={data}
+            onChange={(e) => setData(e.target.value)}
+            className="border border-black rounded-md px-3 py-2"
           />
         </div>
 
