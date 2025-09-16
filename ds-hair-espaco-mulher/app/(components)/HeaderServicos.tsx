@@ -7,6 +7,7 @@ import React from "react";
 const categorias = [
   { nome: "Cabelo", slug: "cabelo" },
   { nome: "Unhas", slug: "unhas" },
+  { nome: "Cílios", slug: "cilios" },
 ];
 
 const HeaderServicos = () => {

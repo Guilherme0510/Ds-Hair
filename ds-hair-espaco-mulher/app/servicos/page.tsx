@@ -38,14 +38,17 @@ const Page = () => {
                 vão além do comum. Nossos profissionais garantem uma experiência
                 de revitalização completa, adaptada às suas necessidades.
               </p>
-              <Link href={'/servicos/categoria/cabelo'} className="py-3 px-6 bg-[#652c53] text-white rounded-br-2xl rounded-tl-2xl rounded-xl hover:opacity-80 transition hover:scale-110">
+              <Link
+                href={"/servicos/categoria/cabelo"}
+                className="py-3 px-6 bg-[#652c53] text-white rounded-br-2xl rounded-tl-2xl rounded-xl hover:opacity-80 transition hover:scale-110"
+              >
                 Saiba Mais
               </Link>
             </div>
           </div>
 
           {/* Serviço 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-[#ffffff50] rounded-2xl px-5 shadow-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-[#ffffff50] rounded-2xl px-0 md:pl-5 shadow-2xl">
             <div className="order-2 md:order-1 flex flex-col justify-center items-center text-center p-4">
               <h1 className="text-2xl md:text-3xl font-semibold mb-8 md:mb-14 text-[#464444] italic">
                 Unhas
@@ -55,17 +58,47 @@ const Page = () => {
                 que vão além do tradicional. Nossas profissionais garantem uma
                 experiência completa, adaptada às suas preferências.
               </p>
-              <Link href={'/servicos/categoria/unhas'} className="py-3 px-6 bg-[#652c53] text-white rounded-br-2xl rounded-tl-2xl rounded-xl hover:opacity-80 transition hover:scale-110">
+              <Link
+                href={"/servicos/categoria/unhas"}
+                className="py-3 px-6 bg-[#652c53] text-white rounded-br-2xl rounded-tl-2xl rounded-xl hover:opacity-80 transition hover:scale-110"
+              >
                 Saiba Mais
               </Link>
             </div>
-            <div className="order-1 md:order-2 relative w-full h-72 md:h-[450px] rounded-2xl overflow-hidden">
+            <div className="order-1 md:order-2 relative w-full h-72 md:h-[450px] overflow-hidden">
               <Image
                 src="/assets/img-servico2.png"
                 alt="Serviço 2"
                 fill
-                className="object-cover"
+                className="object-cover md:object-[10%_90%] "
               />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-[#ffffff50] rounded-2xl pr-5 shadow-2xl">
+            <div className="relative w-full h-72 md:h-[450px] overflow-hidden">
+              <Image
+                src="/assets/img-servico3.png"
+                alt="Serviço 1"
+                fill
+                className="object-cover object-[10%_82%]"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center text-center">
+              <h1 className="text-2xl md:text-3xl font-semibold mb-8 md:mb-14 text-[#464444] italic">
+                Cílios
+              </h1>
+              <p className="mb-4 max-w-[400px]">
+                Realce seu olhar com nossos serviços completos de cílios,
+                incluindo Lash Lifting, Extensão de Cílios e Brow Lamination.
+                Nossa equipe garante resultados profissionais, naturais e
+                duradouros, proporcionando beleza e confiança em cada detalhe.
+              </p>
+              <Link
+                href="/servicos/categoria/cilios"
+                className="py-3 px-6 bg-[#652c53] text-white rounded-br-2xl rounded-tl-2xl rounded-xl hover:opacity-80 transition hover:scale-110"
+              >
+                Saiba Mais
+              </Link>
             </div>
           </div>
         </div>

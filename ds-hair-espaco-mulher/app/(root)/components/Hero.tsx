@@ -8,7 +8,7 @@ const images = [
   {
     title: "Confortabilidade",
     text: "Desfrute da confortabilidade enquanto realçamos sua beleza!!",
-    imageUrl: "/assets/img-banner1.jpg",
+    imageUrl: "/assets/img_banner1.jpg",
     alt: "Image do banner 1",
   },
   {
@@ -20,7 +20,7 @@ const images = [
   {
     title: "Luxo",
     text: "Experimente o luxo em cada detalhe da sua transformação!!",
-    imageUrl: "/assets/img-banner3.jpg",
+    imageUrl: "/assets/img_banner3.jpg",
     alt: "Image do banner 3",
   },
 ];

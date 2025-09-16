@@ -55,16 +55,16 @@ const Navbar = () => {
           <div className="flex flex-row gap-5 items-center px-4">
             <div className="flex flex-row gap-5">
               <Link
-      href="https://api.whatsapp.com/send?phone=5511943662796&text=Olá! Gostaria de saber mais sobre os serviços."
-      className="text-white rounded-md bg-[#3f1331] p-3 hover:scale-110 hover:bg-[#300823]"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => {
-        trackEvent("click_whatsapp", { pagina: "home" });
-      }}
-    >
-      <FaWhatsapp className="w-4 h-4" />
-    </Link>
+                href="https://api.whatsapp.com/send?phone=5511943662796&text=Olá! Gostaria de saber mais sobre os serviços."
+                className="text-white rounded-md bg-[#3f1331] p-3 hover:scale-110 hover:bg-[#300823]"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent("click_whatsapp", { pagina: "home" });
+                }}
+              >
+                <FaWhatsapp className="w-4 h-4" />
+              </Link>
               <Link
                 href="https://www.instagram.com/ds_hairespacomulher/"
                 className="text-white rounded-md bg-[#3f1331] p-3 hover:scale-110 hover:bg-[#300823]"
@@ -111,8 +111,9 @@ const Navbar = () => {
                   key={item}
                   className="text-white text-lg font-medium hover:text-pink-300 transition-colors duration-300"
                 >
-                  <Link href={item === "Inicio" ? "/" : `/${slugify(item)}`}>{item}</Link>
-
+                  <Link href={item === "Inicio" ? "/" : `/${slugify(item)}`}>
+                    {item}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -125,7 +126,9 @@ const Navbar = () => {
                   key={item}
                   className="text-white text-center py-2 relative group"
                 >
-                  <Link href={item === "Inicio" ? "/" : `/${slugify(item)}`}>{item}</Link>
+                  <Link href={item === "Inicio" ? "/" : `/${slugify(item)}`}>
+                    {item}
+                  </Link>
                   <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#fff] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
                 </li>
               ))}

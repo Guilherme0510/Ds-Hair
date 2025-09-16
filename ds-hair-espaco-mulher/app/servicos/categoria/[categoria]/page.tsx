@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-
 type Props = {
   params: Promise<{ categoria: string }>;
 };
@@ -71,6 +70,23 @@ const servicosPorCategoria: Record<
       imagem: "/assets/servicos/pedicure.jpg",
     },
   ],
+  cilios: [
+    {
+      titulo: "Extensão de Cílios",
+      slug: "extensao-de-cilios",
+      imagem: "/assets/servicos/extensao.jpg",
+    },
+    {
+      titulo: "Lifting de Cílios",
+      slug: "lifting-de-cilios",
+      imagem: "/assets/servicos/lifting.jpg",
+    },
+    {
+      titulo: "Design de Sobrancelhas",
+      slug: "design-de-sobrancelhas",
+      imagem: "/assets/servicos/design.jpg",
+    },
+  ],
 };
 
 export default async function CategoriaPage({ params }: Props) {
@@ -86,7 +102,13 @@ export default async function CategoriaPage({ params }: Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {servicos.map((servico) => {
           const nomeContato =
-            categoria === "cabelo" ? "Daniela" : "Agatha";
+            categoria === "cabelo"
+              ? "Daniela da Silva"
+              : categoria === "unhas"
+              ? "Agatha Silva"
+              : categoria === "cilios"
+              ? "Camila Lins"
+              : "";
 
           const mensagem = `Olá, ${nomeContato}! Estou visitando o site e gostaria de saber mais sobre o serviço de ${servico.titulo.toLowerCase()}. Poderia me passar mais informações, por favor?`;
 

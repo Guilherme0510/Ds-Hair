@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -8,6 +9,7 @@ const Footer = () => {
       <div className="border-t border-white mb-6"></div>
 
       <div className="flex flex-col md:flex-row justify-between mx-auto items-center gap-4 max-w-7xl">
+        {/* Navegação */}
         <nav className="flex gap-6 text-lg font-medium">
           <Link href="/" className="hover:underline">
             Início
@@ -26,8 +28,9 @@ const Footer = () => {
           </Link>
         </nav>
 
+        {/* Logo + Créditos */}
         <div className="flex flex-col items-center md:items-end gap-2">
-          <Link href={"/"}>
+          <Link href="/">
             <Image
               src="/assets/logo-dshair-ñfundo.png"
               alt="Logo DS Hair"
@@ -35,7 +38,14 @@ const Footer = () => {
               height={30}
             />
           </Link>
-          <span className="text-sm">© 2024 Silva&apos;s Web</span>
+          <a
+            href="https://silvasweb.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs md:text-sm text-gray-200 hover:text-white transition-colors duration-300"
+          >
+            © {new Date().getFullYear()} <span className="font-semibold">Silva'sWeb</span>
+          </a>
         </div>
       </div>
     </footer>
